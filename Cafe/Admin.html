@@ -1,0 +1,59 @@
+<html>
+
+<head>
+<title>ADMIN LOGIN</title>
+
+<style>
+img {
+  border-radius: 50%;
+}
+
+</style>
+
+</head>
+
+<body background="login.jpg" style="background-repeat: no-repeat; background: rgba(0, 0, 0, 0.4) url(login.jpg);  background-blend-mode: darken; background-size: 100% 100%;" >
+
+	<center><br><br><br><br><br><br><br><img src="img_avatar.png" alt="Avatar" style="width:200px"><br><br><br></center>
+
+	<form name="form_n" onsubmit="return validateForm()" method="post" action="Admin_page.php" >
+
+        <center><label for="fname" style="color: white;">Username: </label><br>
+        <input type="text" id="fname" name="fname" required style="border-radius: 28%; text-align: center;"><br><br>
+        <label for="pass"style= "color: white;">Password: </label><br>
+        <input type="Password" id="pass" name="pass" required style="border-radius: 28%; text-align: center;"><br><br><br>
+        <input type="submit" value="Submit" style="border-radius:20%; margin: 8px 4px; font-size: 16px; padding: 8px 24px; border: none; background-color: #00ff2a;"></center>
+		
+
+	</form>
+
+    <script> 
+
+    	function validateForm() {
+     var fname = document.form_n.fname.value;		
+     var pass = document.form_n.pass.value;
+
+
+   if(pass.length < 6 || pass.length >15)
+     {
+      alert("Password must be 6 to 12 characters");
+ 
+     }
+    if (pass.search(/[0-9]/)==-1) {
+    	alert("Password must contain atleast 1 numerical characters")
+
+    }
+    if(fname == "Admin_12345" && pass == "Abcde123!@#")
+    {
+    	return true;
+    } 
+    else{
+      alert("Incorrect Password.");
+      return false;
+    }
+}
+
+    </script>
+
+</body>
+</html>

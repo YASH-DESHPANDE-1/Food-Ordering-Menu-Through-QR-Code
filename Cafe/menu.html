@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgb(225, 239, 241);
+}
+
+.main {
+  width: 1170px;
+  margin: 100px auto;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.section-title h2 {
+  text-transform: capitalize;
+  font-size: 55px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+.section-title h2:before {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 3px;
+  background-color: #00875c;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menus {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.menu-column {
+  width: 31%;
+}
+.menu-column h4 {
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.menu-column h4:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: #00875c;
+  bottom: 0;
+}
+.single-menu {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.single-menu img {
+  border-radius: 0%;
+  max-width: 110px;
+  
+  padding: 3px;
+  margin-right: 15px;
+  transition: .3s;
+}
+.single-menu .menu-content h5 {
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 500;
+  border-bottom: 1px dashed rgb(201, 163, 163);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.single-menu:hover img{
+    transform: rotate(360deg);
+}
+.single-menu .menu-content h5 span {
+  color: tomato;
+  float: right;
+  font-weight: 600;
+  font-style: italic;
+}
+body {
+  background-image: url('menubg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="section-title">
+        <h2 style="color: rgb(14, 233, 233);">Menu</h2>
+        <p style="color: rgb(214, 208, 210);font-size: 25px;">Welcome To DY Patil University Canteen!</p>
+    </div>
+    <div class="menus">
+        <div class="menu-column">
+            <h4>Beverages</h4>
+            <div class="single-menu">
+                <img src="chai.png" alt="chai">
+                <div class="menu-content">
+                    <h5>Chai<span>10 Rs</span></h5>
+                    <p>पूरी दुनिया में सबसे अच्छी चाय.</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="coffee.png" alt="coffee">
+                <div class="menu-content">
+                    <h5>Coffee <span style="margin-left: 60px;">15 Rs</span></h5>
+                    <p>कड़क कॉफ़ी</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="cold coffee.png" alt="cold coffee">
+                <div class="menu-content">
+                    <h5>Cold Coffee <span>25 Rs</span></h5>
+                    <p>कोल्ड कॉफी हमेशा एक अच्छा विचार है।.</p>
+                </div>
+            </div>
+        </div>
+        <div class="menu-column">
+            <h4>Snacks</h4>
+            <div class="single-menu">
+                <img src="vadapav.png" alt="vadapav">
+                <div class="menu-content">
+                    <h5>Vadapav <span>10 Rs</span></h5>
+                    <p>"वड़ा पाव मतलब एक के बाद एक".</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="samosa.png" alt="samosa">
+                <div class="menu-content">
+                    <h5>Samosa <span>15 Rs</span></h5>
+                    <p>समोसा खाकर सुख शांति होती है।.</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="upma.png" alt="upma">
+                <div class="menu-content">
+                    <h5>Upma <span>25 Rs</span></h5>
+                    <p>इडली खाने वाले क्या जाने उपमा का स्वाद.</p>
+                </div>
+            </div>
+        </div>
+        <div class="menu-column">
+            <h4>Main Course</h4>
+            <div class="single-menu">
+                <img src="thali.png" alt="thali">
+                <div class="menu-content">
+                    <h5>Mini Thali <span>70 Rs</span></h5>
+                    <p>जेब नहीं होगी खली खाके तो देखी मिनी थाली.</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="biryani.png" alt="Biryani">
+                <div class="menu-content">
+                    <h5>Biryani <span>150 Rs</span></h5>
+                    <p>“होली हो या दिवाली, पर बननी तो तब भी पड़ेगी बिरयानी!.</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="fried rice.png" alt="Fried Rice">
+                <div class="menu-content">
+                    <h5>Fried Rice <span>120 Rs</span></h5>
+                    <p>मुह से हमेशा निकलेगा नाइस जब प्लेट मैं हो फ्राइड राइस.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

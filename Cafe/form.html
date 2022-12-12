@@ -1,0 +1,39 @@
+<html>
+<head>
+   <title></title>
+</head>
+
+<body>
+
+    <form method="post" action="menu.php">
+    	<label for="fname">First Name: </label>
+    	<input type="text" name="fname" id="fname" required>
+    	<label for="lname">Last Name: </label>  
+    	<input type="text" name="lname" id="lname" required><br><br>
+
+    	<label for="mob">Mobile No: </label>
+    	<input type="text" name="mob" id="mob" required><br><br>
+    	
+
+    		<fieldset>
+    			<legend>Payment Option: </legend>
+    		<label>
+    		<input type="radio" name="po" value="cash">
+    		Cash
+    		</label>
+    		<label>
+    		<input type="radio" name="po" value="upi">
+    		UPI
+    		</label>
+    		<label>
+    		<input type="radio" name="po" value="card">
+    		Card
+    		</label>
+    	    </fieldset><br><br>
+    	    <button>Submit</button>
+    	
+    </form>
+
+
+</body>
+</html>

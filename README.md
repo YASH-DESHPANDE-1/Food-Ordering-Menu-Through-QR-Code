@@ -4,6 +4,7 @@ Food Ordering Menu Through QR Code
 This project enables customers to conveniently order food from a restaurant's menu using a QR (Quick Response) code. With the increasing use of mobile devices and the popularity of QR codes, this system provides an efficient and contactless method for customers to browse a restaurant's menu, place their orders, and make payments.
 
 How it Works
+
 QR Code Generation: The restaurant generates a unique QR code that represents its menu. This QR code can be printed and placed on tables, displayed on digital screens, or included in promotional materials.
 
 Scanning the QR Code: Customers can use their smartphones or tablets to scan the QR code. This can be done using the device's built-in camera or a QR code scanner app.
